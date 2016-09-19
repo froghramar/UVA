@@ -19,7 +19,7 @@ const int N = 105;
 
 int n,m,k;
 char s[N][N];
-int vis[N][N],adj[8][2] = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
+int vis[N][N], adj[8][2] = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
 
 void dfs(int x, int y){
 	if(x < 1 or x > n or y < 1 or y > m or vis[x][y] or s[x][y] == '*') return;
